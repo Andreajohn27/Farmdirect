@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmDirect Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">FarmDirect</h1>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#categories">Category</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="contact.html">Contact</a></li>
+   
+
+   <li> <a href="cart.html" class="cart-icon">
+  🛒
+  <span id="cart-count">0</span></a></li>
+</ul>
+
+  </nav>
+</header>
+
+
+<section class="products">
+
+<h2>Seasonal Vegetables & Fruits</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="tomato.jpg" alt="Tomato" class="product-img">
+<span class="product-freshness green">Fresh, consume within a week</span>
+
+<h3>Tomato – தக்காளி</h3>
+<p>₹40 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Tomato',40,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="mango.jpg" alt="Mango" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh , consume within 3days</span>
+
+<h3>Mango – மாம்பழம்</h3>
+<p>₹60 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Mango',60,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="watermelon.jpg" alt="Watermelon" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Watermelon – தர்பூசணி</h3>
+<p>₹30 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Watermelon',30,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="brinjal.jpg" alt="Brinjal" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Brinjal – கத்தரிக்காய்</h3>
+<p>₹40 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Brinjal',40,'kg')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+
+<img src="okra.jpg" alt="Okra" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Lady's Finger – வெண்டைக்காய்</h3>
+<p>₹45 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Lady Finger',45,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="jackfruit.jpg" alt="Jackfruit" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Jackfruit – பலாப்பழம்</h3>
+<p>₹120 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Jackfruit',120,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="drumstick.jpg" alt="Drumstick" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Drumstick – முருங்கைக்காய்</h3>
+<p>₹60 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Drumstick',60,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="guava.jpg" alt="Guava" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Guava – கொய்யாப்பழம்</h3>
+<p>₹50 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Guava',50,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="cucumber.jpg" alt="Cucumber" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Cucumber – வெள்ளரிக்காய்</h3>
+<p>₹30 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Cucumber',30,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="greenchilli.jpg" alt="Green Chilli" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Green Chilli – பச்சை மிளகாய்</h3>
+<p>₹50 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Green Chilli',50,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="pineapple.jpg" alt="Pineapple" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Pineapple – அன்னாசி</h3>
+<p>₹70 / piece</p>
+<button class="add-to-cart-btn" onclick="addToCart('Pineapple',70,'piece')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="pomegranate.jpg" alt="Pomegranate" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Pomegranate – மாதுளை</h3>
+<p>₹120 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Pomegranate',120,'kg')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+
+<h2>Leafy Greens</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="spinach.jpg" alt="Spinach" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Spinach – பசலை கீரை</h3>
+<p>₹15 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Spinach',15,'bunch')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="mint.jpg" alt="Mint" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Mint – புதினா</h3>
+<p>₹10 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Mint',10,'bunch')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="coriander.jpg" alt="Coriander Leaves" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Coriander – கொத்தமல்லி கீரை</h3>
+<p>₹12 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Coriander',12,'bunch')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="moringa.jpg" alt="Moringa Leaves" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Moringa Leaves – முருங்கை கீரை</h3>
+<p>₹20 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Moringa Leaves',20,'bunch')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="serukerrai.jpg" alt="Seru Keerai" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Seru Keerai – சேறு கீரை</h3>
+<p>₹15 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Seru Keerai',15,'bunch')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="lettuce.jpg" alt="Lettuce" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Lettuce – லெட்டுஸ்</h3>
+<p>₹30 / bunch</p>
+<button class="add-to-cart-btn" onclick="addToCart('Lettuce',30,'bunch')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+
+<h2>Root Vegetables</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="carrot.jpg" alt="Carrot" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Carrot – காரட்</h3>
+<p>₹50 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Carrot',50,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="beetroot.jpg" alt="Beetroot" class="product-img">
+<span class="product-freshness red">Best Used Soon,consume the same day </span>
+
+<h3>Beetroot – பீட்ரூட்</h3>
+<p>₹45 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Beetroot',45,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="potato.jpg" alt="Potato" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Potato – உருளைக்கிழங்கு</h3>
+<p>₹40 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Potato',40,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="radish.jpg" alt="Radish" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Radish – முள்ளங்கி</h3>
+<p>₹30 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Radish',30,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="ginger.jpg" alt="Ginger" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Ginger – இஞ்சி</h3>
+<p>₹120 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Ginger',120,'kg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="garlic.jpg" alt="Garlic" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Garlic – பூண்டு</h3>
+<p>₹180 / kg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Garlic',180,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="onion.jpg" alt="Onion" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Onion – வெங்காயம்</h3>
+<p>₹35 / kg</p>
+<button  class="add-to-cart-btn" onclick="addToCart('Onion',35,'kg')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="smallonion.jpg" alt="Small Onion" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Small Onion – சின்ன வெங்காயம்</h3>
+<p>₹60 / kg</p>
+<button  class="add-to-cart-btn" onclick="addToCart('Small Onion',60,'kg')">Add to Cart</button>
+
+</div>
+
+</div>
+
+
+
+<h2>Fresh Farm Daily Products</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="cowmilk.jpg" alt="Cow Milk" class="product-img">
+<span class="product-freshness green">Fresh,consume within 3days</span>
+
+<h3>Cow Milk – பசும் பால்</h3>
+<p>₹60 / litre</p>
+<button  class="add-to-cart-btn" onclick="addToCart('Cow Milk',60,'litre')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="goatmilk.jpeg" alt="Goat Milk" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Goat Milk – ஆட்டு பால்</h3>
+<p>₹90 / litre</p>
+<button class="add-to-cart-btn" onclick="addToCart('Goat Milk',90,'litre')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="honey.jpg" alt="Honey" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Honey – தேன்</h3>
+<p>₹300 / 500ml</p>
+<button class="add-to-cart-btn" onclick="addToCart('Honey',300,'500ml')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="egg.jpg" alt="Chicken Eggs" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Chicken Eggs – கோழி முட்டை</h3>
+<p>₹6 / egg</p>
+<button class="add-to-cart-btn" onclick="addToCart('Chicken Eggs',6,'egg')">Add to Cart</button>
+
+</div>
+
+
+<div class="product-card">
+
+<img src="cheese.jpg" alt="Organic Cheese" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Organic Cheese – ஆர்கானிக் சீஸ்</h3>
+<p>₹250 / 200g</p>
+<button class="add-to-cart-btn" onclick="addToCart('Organic Cheese',250,'200g')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="butter.jpg" alt="Organic Butter" class="product-img">
+<span class="product-freshness green">Fresh,consume within a week</span>
+
+<h3>Organic Butter – ஆர்கானிக் வெண்ணெய்</h3>
+<p>₹180 / 200g</p>
+<button class="add-to-cart-btn" onclick="addToCart('Organic Butter',180,'200g')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="ghee.jpg" alt="Organic Ghee" class="product-img">
+<span class="product-freshness yellow">Moderately Fresh,consume within 3days</span>
+
+<h3>Organic Ghee – ஆர்கானிக் நெய்</h3>
+<p>₹600 / 500ml</p>
+<button class="add-to-cart-btn" onclick="addToCart('Organic Ghee',600,'500ml')">Add to Cart</button>
+
+</div>
+
+<div class="product-card">
+
+  <img src="paneer.jpg" alt="Paneer" class="product-img">
+  <span class="product-freshness green">Fresh,consume within a week</span>
+
+  <h3>Paneer – பனீர்</h3>
+  <p>₹200 / 200g</p>
+  
+  <!-- Add the class here -->
+  <button class="add-to-cart-btn" onclick="addToCart('Paneer',200,'200g')">
+    Add to Cart
+  </button>
+
+</div>
+
+</div>
+</section>
+
+
+<footer class="footer">
+<p>© 2026 FarmDirect | Supporting Local Farmers</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

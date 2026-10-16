@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore | FarmDirect</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* General Page Style */
+
+body{
+background:linear-gradient(to bottom,#f5fff5,#ecf8ec);
+color:#333;
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+
+/* Page heading */
+
+.page-title{
+text-align:center;
+padding:25px;
+background:linear-gradient(135deg,#4db252,#2e7d32);
+color:white;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.page-title p{
+margin-top:8px;
+opacity:0.9;
+}
+
+
+/* Farmer Story Section */
+
+.farmer-story{
+display:flex;
+align-items:center;
+gap:40px;
+padding:50px;
+background:white;
+margin:40px;
+border-radius:15px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.farmer-story:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.farmer-img{
+width:350px;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+transition:transform 0.4s ease;
+}
+
+.farmer-story:hover .farmer-img{
+transform:scale(1.05);
+}
+
+.farmer-text{
+flex:1;
+}
+
+.farmer-text h2{
+color:#2e7d32;
+margin-bottom:12px;
+font-size:24px;
+}
+
+.farmer-text p{
+line-height:1.7;
+margin-bottom:10px;
+}
+
+
+/* Nutrition Section */
+
+.nutrition{
+padding:60px 20px;
+text-align:center;
+}
+
+.nutrition h2{
+color:#2e7d32;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.nutrition-cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:35px;
+flex-wrap:wrap;
+}
+
+.tip{
+background:white;
+padding:25px;
+border-radius:12px;
+width:260px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tip h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.tip p{
+font-size:14px;
+line-height:1.6;
+}
+
+
+/* Footer */
+
+.footer{
+text-align:center;
+padding:18px;
+background:#2e7d32;
+color:white;
+margin-top:40px;
+font-size:14px;
+letter-spacing:1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">FarmDirect</h1>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#categories">Category</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<div class="page-title">
+<h1>Explore FarmDirect</h1>
+<p>Discover the people behind your food and learn healthy eating habits</p>
+</div>
+
+
+<!-- Farmer Story -->
+
+<section class="farmer-story">
+
+<img src="farmer1.jpg" class="farmer-img">
+
+<div class="farmer-text">
+
+<h2>Meet Farmer Ramesh - Trichy</h2>
+
+<p>
+Ramesh is a passionate farmer from Tamil Nadu who practices natural farming.
+He believes that healthy soil produces healthy food. By avoiding harmful
+chemicals and focusing on traditional farming methods, Ramesh grows fresh
+vegetables that reach families directly through FarmDirect.
+</p>
+
+<p>
+Through FarmDirect, his mission is to provide nutritious food while protecting
+the environment and supporting local agriculture.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section class="farmer-story">
+
+<img src="farmer2.jpg" class="farmer-img">
+
+<div class="farmer-text">
+
+<h2>Meet Farmer Arockia Swamy – Ramanathapuram</h2>
+
+<p>
+Arockia Swamy is a dedicated farmer from Ramanathapuram, a district known
+for its dry climate and limited water resources. Farming here is extremely
+challenging because much of the underground water is salty and rainfall is
+unpredictable.
+</p>
+
+<p>
+Despite these hardships, Arockia Swamy continues to cultivate crops with
+determination and hope. His hard work represents the resilience of farmers
+who struggle against nature every year to provide fresh food for our
+communities.
+</p>
+
+<p>
+Through FarmDirect, his mission is to provide nutritious food while
+protecting the environment and supporting local agriculture.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- Nutrition Tips -->
+
+<section class="nutrition">
+
+<h2>Nutrition Tips for Healthy Living</h2>
+
+<div class="nutrition-cards">
+
+
+<div class="tip">
+
+<h3>Eat Seasonal Vegetables</h3>
+
+<p>
+Seasonal vegetables are fresher and richer in nutrients because they
+are harvested at the right time.
+</p>
+
+</div>
+
+
+<div class="tip">
+
+<h3>Add Leafy Greens</h3>
+
+<p>
+Spinach and other leafy vegetables are rich in iron, vitamins,
+and antioxidants that improve immunity.
+</p>
+
+</div>
+
+
+<div class="tip">
+
+<h3>Choose Natural Foods</h3>
+
+<p>
+Fresh farm products contain fewer preservatives and provide
+better nutrition than processed foods.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer class="footer">
+<p>© 2026 FarmDirect | Supporting Local Farmers</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

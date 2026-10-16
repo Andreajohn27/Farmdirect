@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FarmDirect Contact</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.contact-section{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+background:#f9f9f9;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.contact-text{
+max-width:500px;
+}
+
+.contact-text h1{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+.contact-text p{
+line-height:1.6;
+}
+
+.contact-info{
+margin-top:20px;
+}
+
+.contact-info p{
+margin:8px 0;
+}
+
+.contact-image img{
+width:400px;
+border-radius:10px;
+}
+
+.page-title{
+text-align:center;
+padding:10px;
+background:#4db252;
+color:white;
+}
+
+/* NEW FORM DESIGN */
+
+.enquiry-form{
+margin-top:50px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.enquiry-form h2{
+color:#2e7d32;
+margin-bottom:15px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea{
+width:80%;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.enquiry-form textarea{
+resize:none;
+height:100px;
+}
+
+.enquiry-form button{
+background:#2e7d32;
+color:white;
+border:none;
+padding:10px 20px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+}
+
+.enquiry-form button:hover{
+background:#1b5e20;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">FarmDirect</h1>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#categories">Category</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="page-title">
+<h1>FarmDirect - Contact</h1>
+</div>
+
+
+<section class="contact-section">
+
+<div class="contact-text">
+
+<h1>Contact Us</h1>
+<p>We would love to hear from you. Reach out to FarmDirect for any questions,
+orders, or support.</p>
+
+<div class="contact-info">
+<p><strong>📞 Phone:</strong> +91 98765 43210</p>
+<p><strong>✉ Email:</strong> support@farmdirect.com</p>
+<p><strong>📍 Address:</strong> FarmDirect Market,
+Chennai, Tamil Nadu, India</p>
+</div>
+
+
+<!-- ENQUIRY FORM -->
+
+<div class="enquiry-form">
+
+<h2>Send an Enquiry</h2>
+
+
+
+<form onsubmit="alert('Query sent successfully!'); return false;"> </form>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea placeholder="Write your enquiry here..." required></textarea>
+
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+</div>
+
+</div>
+
+<div class="contact-image">
+<img src="contact.jpg" alt="Farm Image">
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

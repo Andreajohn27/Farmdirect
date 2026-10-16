@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart | FarmDirect</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.cart-page{
+width:70%;
+margin:60px auto;
+}
+
+.cart-page h2{
+text-align:center;
+color:#2e7d32;
+}
+
+.cart-page ul{
+list-style:none;
+padding:0;
+}
+
+.cart-page li{
+background:#f9f5f0;
+padding:12px;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">FarmDirect</h1>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html#categories">Category</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    </header>
+
+
+<section class="cart-page">
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<h3 id="total">Total: ₹0</h3>
+
+<div class="cart-buttons">
+<button onclick="checkout('bill')">Generate Bill</button>
+<button onclick="checkout('payment')">Make Payment</button>
+</div>
+
+<pre id="bill-output"></pre>
+
+</section>
+
+<script src="script.js"></script>
+
+
+<footer class="footer">
+<p>© 2026 FarmDirect | Supporting Local Farmers</p>
+</footer>
+
+</body>
+
+</html>
