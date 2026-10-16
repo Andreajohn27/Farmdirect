@@ -3,6 +3,8 @@ FarmDirect
 A web-based e-commerce platform designed to connect customers 
 directly with farmers and make fresh farm products easier to discover and purchase.
 
+![FarmDirect Screenshot](FD.png)
+
  Features
 - Browse farm products
 - View product details
